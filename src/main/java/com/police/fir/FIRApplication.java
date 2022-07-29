@@ -1,7 +1,12 @@
-package com.example.demo;
+package com.police.fir;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.police.fir.Entity.FIRSearchBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.io.File;
+import java.io.IOException;
 
 //@SpringBootApplication = @Configuration + @ComponentScan + @EnableAutoConfiguration
 //The @SpringBootApplication annotation is a combination of following three Spring annotations and provides the functionality of all three with just one line of code.
@@ -15,11 +20,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@EnableAutoConfiguration
 //This annotation enables the magical auto-configuration feature of Spring Boot, which can automatically configure a lot of stuff for you.
 @SpringBootApplication
-public class DemoApplication {
+public class FIRApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(FIRApplication.class, args);
 		System.out.println("Hello world!");
+
+
 
 
 	}
