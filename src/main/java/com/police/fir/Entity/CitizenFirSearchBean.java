@@ -8,7 +8,7 @@ import java.util.List;
 public class CitizenFirSearchBean {
     private int districtId;
     private String firNumDisplay;
-    private int actId;
+    private String actId;
     private String actName;
     private String complainantFirstName;
     private String complainantLastName;
@@ -16,16 +16,16 @@ public class CitizenFirSearchBean {
     private String complainantName;
     private int districtCd;
     private String districtName;
-    private String firBrief;
-    private int firDate;
-    private int firFromDate;
+    private long firBrief;
+    private String firDate;
+    private String firFromDate;
     private String firFromDateStr;
-    private int firYear;
+    private String firYear;
     private String isFirstSyncDone;
     private int langCd;
     private String linkedFirAction;
     private String linkedFirDetails;
-    private int linkedFirs;
+    private String linkedFirs;
     private String linkingFir;
     private String linkingReason;
     private String misc1;
@@ -42,35 +42,35 @@ public class CitizenFirSearchBean {
     private String queryDynamicPart;
     private String queryKey;
     private String recordCreatedBy;
-    private int recordCreatedOn;
+    private String recordCreatedOn;
     private String recordStatus;
     private String recordSyncFrom;
-    private int recordSyncOn;
-    private int recordSyncTo;
+    private String recordSyncOn;
+    private String recordSyncTo;
     private String recordUpStringdBy;
     private String recordUpStringdFrom;
-    private int recordUpStringdOn;
-    private int recordUpdatedFrom;
-    private int recordUpdatedOn;
+    private String recordUpStringdOn;
+    private String recordUpdatedFrom;
+    private String recordUpdatedOn;
     private String recordUpdatedby;
-    private int regFirNo;
+    private String regFirNo;
     private String returnClassType;
     private boolean searchCrit;
     private String searchName;
-    private int sectionId;
+    private String sectionId;
     private String sectionName;
     private int stateCd;
     private String stateName;
     private String statusOfFir;
     private int userDistrictCd;
     private int userPsCd;
-    private String userStateCd;
+    private int userStateCd;
 
-    public String getUserStateCd() {
+    public int getUserStateCd() {
         return userStateCd;
     }
 
-    public void setUserStateCd(String userStateCd) {
+    public void setUserStateCd(int userStateCd) {
         this.userStateCd = userStateCd;
     }
 
@@ -122,11 +122,11 @@ public class CitizenFirSearchBean {
         this.sectionName = sectionName;
     }
 
-    public int getSectionId() {
+    public String getSectionId() {
         return sectionId;
     }
 
-    public void setSectionId(int sectionId) {
+    public void setSectionId(String sectionId) {
         this.sectionId = sectionId;
     }
 
@@ -156,11 +156,11 @@ public class CitizenFirSearchBean {
 
 
 
-    public int getRegFirNo() {
+    public String getRegFirNo() {
         return regFirNo;
     }
 
-    public void setRegFirNo(int regFirNo) {
+    public void setRegFirNo(String regFirNo) {
         this.regFirNo = regFirNo;
     }
 
@@ -172,27 +172,27 @@ public class CitizenFirSearchBean {
         this.recordUpdatedby = recordUpdatedby;
     }
 
-    public int getRecordUpdatedOn() {
+    public String getRecordUpdatedOn() {
         return recordUpdatedOn;
     }
 
-    public void setRecordUpdatedOn(int recordUpdatedOn) {
+    public void setRecordUpdatedOn(String recordUpdatedOn) {
         this.recordUpdatedOn = recordUpdatedOn;
     }
 
-    public int getRecordUpdatedFrom() {
+    public String getRecordUpdatedFrom() {
         return recordUpdatedFrom;
     }
 
-    public void setRecordUpdatedFrom(int recordUpdatedFrom) {
+    public void setRecordUpdatedFrom(String recordUpdatedFrom) {
         this.recordUpdatedFrom = recordUpdatedFrom;
     }
 
-    public int getRecordUpStringdOn() {
+    public String getRecordUpStringdOn() {
         return recordUpStringdOn;
     }
 
-    public void setRecordUpStringdOn(int recordUpStringdOn) {
+    public void setRecordUpStringdOn(String recordUpStringdOn) {
         this.recordUpStringdOn = recordUpStringdOn;
     }
 
@@ -212,19 +212,19 @@ public class CitizenFirSearchBean {
         this.recordUpStringdBy = recordUpStringdBy;
     }
 
-    public int getRecordSyncTo() {
+    public String getRecordSyncTo() {
         return recordSyncTo;
     }
 
-    public void setRecordSyncTo(int recordSyncTo) {
+    public void setRecordSyncTo(String recordSyncTo) {
         this.recordSyncTo = recordSyncTo;
     }
 
-    public int getRecordSyncOn() {
+    public String getRecordSyncOn() {
         return recordSyncOn;
     }
 
-    public void setRecordSyncOn(int recordSyncOn) {
+    public void setRecordSyncOn(String recordSyncOn) {
         this.recordSyncOn = recordSyncOn;
     }
 
@@ -244,11 +244,11 @@ public class CitizenFirSearchBean {
         this.recordStatus = recordStatus;
     }
 
-    public int getRecordCreatedOn() {
+    public String getRecordCreatedOn() {
         return recordCreatedOn;
     }
 
-    public void setRecordCreatedOn(int recordCreatedOn) {
+    public void setRecordCreatedOn(String recordCreatedOn) {
         this.recordCreatedOn = recordCreatedOn;
     }
 
@@ -380,11 +380,11 @@ public class CitizenFirSearchBean {
         this.linkingFir = linkingFir;
     }
 
-    public int getLinkedFirs() {
+    public String getLinkedFirs() {
         return linkedFirs;
     }
 
-    public void setLinkedFirs(int linkedFirs) {
+    public void setLinkedFirs(String linkedFirs) {
         this.linkedFirs = linkedFirs;
     }
 
@@ -420,11 +420,11 @@ public class CitizenFirSearchBean {
         this.isFirstSyncDone = isFirstSyncDone;
     }
 
-    public int getFirYear() {
+    public String getFirYear() {
         return firYear;
     }
 
-    public void setFirYear(int firYear) {
+    public void setFirYear(String firYear) {
         this.firYear = firYear;
     }
 
@@ -436,27 +436,27 @@ public class CitizenFirSearchBean {
         this.firFromDateStr = firFromDateStr;
     }
 
-    public int getFirFromDate() {
+    public String getFirFromDate() {
         return firFromDate;
     }
 
-    public void setFirFromDate(int firFromDate) {
+    public void setFirFromDate(String firFromDate) {
         this.firFromDate = firFromDate;
     }
 
-    public int getFirDate() {
+    public String getFirDate() {
         return firDate;
     }
 
-    public void setFirDate(int firDate) {
+    public void setFirDate(String firDate) {
         this.firDate = firDate;
     }
 
-    public String getFirBrief() {
+    public long getFirBrief() {
         return firBrief;
     }
 
-    public void setFirBrief(String firBrief) {
+    public void setFirBrief(long firBrief) {
         this.firBrief = firBrief;
     }
 
@@ -515,11 +515,11 @@ public class CitizenFirSearchBean {
         this.actName = actName;
     }
 
-    public int getActId() {
+    public String getActId() {
         return actId;
     }
 
-    public void setActId(int actid) {
+    public void setActId(String actid) {
         this.actId = actid;
     }
 
